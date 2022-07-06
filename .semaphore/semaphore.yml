@@ -12,7 +12,7 @@ blocks:
           commands:
             - checkout
             - sem-version java 11
-            - mvn -B package --file pom.xml
+            - mvn compile
             - mvn test -P local
       secrets:
         - name: Browserstack Creds
