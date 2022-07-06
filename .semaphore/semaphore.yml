@@ -13,6 +13,8 @@ blocks:
             - checkout
             - sem-version java 11
             - mvn compile
+            - echo $SEMAPHORE_GIT_DIR
+            - pwd
             - mvn test -P local
       secrets:
         - name: Browserstack Creds
