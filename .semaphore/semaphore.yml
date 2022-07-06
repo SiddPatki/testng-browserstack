@@ -15,6 +15,6 @@ blocks:
             - mvn compile
             - echo $SEMAPHORE_GIT_DIR
             - pwd
-            - mvn test -P single
+            - mvn test -P parallel
       secrets:
         - name: Browserstack Creds
