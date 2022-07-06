@@ -10,6 +10,7 @@ blocks:
       jobs:
         - name: Build
           commands:
+            - cache clear
             - checkout
             - sem-version java 11
             - mvn compile
