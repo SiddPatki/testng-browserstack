@@ -13,6 +13,6 @@ blocks:
             - checkout
             - sem-version java 11
             - mvn compile
-            - mvn test -P single
+            - mvn test -P local
       secrets:
         - name: Browserstack Creds
